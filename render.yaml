@@ -2,12 +2,14 @@ services:
   - type: web
     name: booking-api
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn booking_project.wsgi
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn booking_project.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: booking_project.settings
       - key: SECRET_KEY
-        value: your-production-secret-key
+        value: your-secret-key
       - key: PYTHON_VERSION
         value: 3.10
