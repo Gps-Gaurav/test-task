@@ -4,6 +4,8 @@
 
 This is a backend API where users can set their weekly availability, and guests can book time slots (15min, 30min, 45min, 60min) based on that. The system prevents overlapping bookings and only allows booking within available time ranges.
 
+Swagger UI live link: https://test-task-hp1g.onrender.com/swagger/
+
 ## How to Run the Project
 
 ## 1. Clone the repository and install dependencies
