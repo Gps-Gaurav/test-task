@@ -9,7 +9,8 @@ SECRET_KEY = 'django-insecure-piolhbj@@^oj_hmtj@+3yxhgcac!t5v1tv@#ez)$vgcwict4ag
 
 # Debug True sirf local/dev ke liye
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'test-task-hp1g.onrender.com']
+
 
 # Installed apps including DRF and custom apps
 INSTALLED_APPS = [
